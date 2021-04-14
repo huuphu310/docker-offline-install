@@ -14,7 +14,7 @@ echo deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable > /
 apt-mirror
 
 # Save Docker's public key to the mirror directory
-apt-key export 58118E89F3A912897C070ADBF76221572C52609D > /var/spool/apt-mirror/mirror/apt.dockerproject.org/docker.key
+apt-key export 58118E89F3A912897C070ADBF76221572C52609D > /var/spool/apt-mirror/mirror/download.docker.com/docker.key
 
 # Compress the mirror dir to an archive file in the home directory
-tar -cvzf docker_mirror.tar.gz -C /var/spool/apt-mirror/mirror apt.dockerproject.org
+tar -cvzf docker_mirror.tar.gz -C /var/spool/apt-mirror/mirror download.docker.com
