@@ -16,4 +16,4 @@ apt-key add /var/deb/apt-mirror/download.docker.com/docker.key
 apt-get update
 
 # Install Docker engine
-apt-get install docker-engine
+apt-get install docker-ce
